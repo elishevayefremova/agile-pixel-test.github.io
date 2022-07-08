@@ -1,60 +1,1 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Paloma - Agile Pixel Test - Yefremova</title>
-  <link rel="stylesheet" href="css/main.css?v=1.0">
-</head>
-
-<body>
-  <div class="hero">
-    <img src="img/logo.svg" class="hero__logo" alt="Paloma">
-    <img src="img/logo-mobile.svg" class="hero__logo hero__logo_mobile" alt="Paloma">
-    <nav class="hero__navigation navigation">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a href="#">
-            <span>Hear</span>
-            <span>Latest</span>
-            <span>Tour</span>
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a href="#">
-            <span>See</span>
-            <span>Shop</span>
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a href="#">
-            <span>Watch</span>
-            <span>Personal</span>
-            <span>Aid</span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      let body = document.getElementsByTagName('body')[0];
-      
-      let addClass = (tag, classNames) => {
-        console.log(classNames);
-        tag.classList.add(classNames);
-      }
-
-      setTimeout(function(){
-        addClass(body, "is-animated");
-      }, 1000);
-
-
-    });
-  </script>
-</body>
-
-</html>
+<!DOCTYPE html><html lang="en"><head>  <meta charset="UTF-8">  <meta http-equiv="X-UA-Compatible" content="IE=edge">  <meta name="viewport" content="width=device-width,initial-scale=1">  <title>Paloma - Agile Pixel Test - Yefremova</title>  <link rel="stylesheet" href="css/main.css"></head><body>  <div class="hero">    <picture><source srcset="../img/logo.svg" type="image/webp"><img id="logo" src="../img/logo.svg" class="hero__logo" alt="Paloma"></picture>    <picture><source srcset="../img/logo-mobile.svg" type="image/webp"><img src="../img/logo-mobile.svg" class="hero__logo hero__logo_mobile" alt="Paloma"></picture>    <nav class="hero__navigation navigation">      <ul id="navigation" class="navigation__list">        <li class="navigation__item">          <a href="#">            <span>Hear</span>            <span>Latest</span>            <span>Tour</span>          </a>        </li>        <li class="navigation__item">          <a href="#">            <span>See</span>            <span>Shop</span>          </a>        </li>        <li class="navigation__item">          <a href="#">            <span>Watch</span>            <span>Personal</span>            <span>Aid</span>          </a>        </li>      </ul>    </nav>  </div></body><script src="js/main.js"></script></html>
