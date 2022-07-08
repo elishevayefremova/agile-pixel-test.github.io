@@ -26,6 +26,7 @@ body {
   font-family: "Anton";
   min-height: 100vh;
   color: #fff;
+  background: #000;
 }
 
 .hero {
@@ -68,6 +69,19 @@ body {
 
 .navigation__item {
   position: relative;
+  line-height: 119px;
+}
+
+@media (max-width: 1300px) {
+  .navigation__item {
+    line-height: 95px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .navigation__item{
+    line-height: 80px;
+  }
 }
 
 .navigation__item a>span {
@@ -169,6 +183,10 @@ body {
     padding-top: 10vh;
   }
 
+  .navigation__item {
+    line-height: 89px;
+  }
+
   .navigation__item a>span {
     display: block;
     font-size: 80px;
@@ -195,11 +213,19 @@ body {
     line-height: 60px;
   }
 
+  .navigation__item {
+    line-height: 60px;
+  }
+
 }
 
 @media (max-width: 700px) and (orientation: landscape) {
   .navigation__item a>span {
     font-size: 52px;
+    line-height: 54px;
+  }
+
+  .navigation__item {
     line-height: 54px;
   }
 }
@@ -219,6 +245,10 @@ body {
 @media (max-width: 500px) and (orientation: portrait) {
   .navigation__item a>span {
     font-size: 64px;
+    line-height: 72px;
+  }
+
+  .navigation__item {
     line-height: 72px;
   }
 }
